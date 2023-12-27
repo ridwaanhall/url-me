@@ -11,9 +11,11 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-        <title>Landing Page - Front Pages | Vuexy - Bootstrap Admin Template</title>
+        <title>URL Shortener - Erbyl</title>
 
-        <meta name="description" content="" />
+        <meta name="description" content="Create and share shortened URLs effortlessly with erbyl. Unlock the power of concise links for seamless sharing and tracking. Our URL shortener provides a user-friendly platform for managing and customizing your links. Experience the convenience of erbyl for efficient link management. Shorten URLs, track engagement, and optimize your online presence today!" />
+        <meta name="keywords" content="erbyl, URL shortener, link management, short URLs, customize links, track links, share links, online presence" />
+        <meta name="author" content="Erbyl" />
 
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="{% static 'img/favicon/favicon.ico' %}" />
@@ -155,16 +157,16 @@
                 <div id="homePage" class="section-py landing-hero position-relative">
                     <div class="container">
                         <div class="hero-text-box text-center">
-                            <h1 class="text-primary hero-title display-6 fw-bold">One dashboard to manage all your businesses</h1>
+                            <h1 class="text-primary hero-title display-6 fw-bold">Shorten URLs with Ease</h1>
                             <h2 class="hero-sub-title h6 mb-4 pb-1">
-                                Production-ready & easy to use Admin Template<br class="d-none d-lg-block" />
-                                for Reliability and Customizability.
+                                The easiest way to create shortened URLs for all your needs<br class="d-none d-lg-block" />
+                                Fast, reliable, and customizable link management.
                             </h2>
                             <div class="landing-hero-btn d-inline-block position-relative">
                                 <span class="hero-btn-item position-absolute d-none d-md-flex text-heading">
-                                    Join community <img src="{% static 'img/front-pages/icons/Join-community-arrow.png' %}" alt="Join community arrow" class="scaleX-n1-rtl" />
+                                    Get started <img src="{% static 'img/front-pages/icons/Join-community-arrow.png' %}" alt="Join community arrow" class="scaleX-n1-rtl" />
                                 </span>
-                                <a href="#urlShortener" class="btn btn-label-primary btn-lg">Get early access</a>
+                                <a href="#urlShortener" class="btn btn-label-primary btn-lg">Get started now</a>
                             </div>
                         </div>
                     </div>
@@ -175,15 +177,12 @@
             <!-- Contact Us: Start -->
             <section id="urlShortener" class="section-py landing-contact">
                 <div class="container">
-                    <div class="text-center mb-3 pb-1">
-                        <span class="badge bg-label-primary">Contact US</span>
-                    </div>
-                    <h3 class="text-center mb-1"><span class="section-title">Let's work</span> together</h3>
-                    <p class="text-center mb-4 mb-lg-5 pb-md-3">Any question or remark? just write us a message</p>
+                    <h3 class="text-center mb-1"><span class="section-title">Shorten a</span> long link</h3>
+                    <p class="text-center mb-4 mb-lg-5 pb-md-3">Shorten your URLs with ease and efficiency</p>
                     <div class="row gy-4">
                         <div class="col-lg-5">
                             <div class="contact-img-box position-relative border p-2 h-100">
-                                <img src="{% static 'img/front-pages/landing-page/contact-customer-service.png' %}" alt="contact customer service" class="contact-img w-100 scaleX-n1-rtl" />
+                                <img src="{% static 'img/front-pages/landing-page/_b4840405-fe7f-47d3-a30f-0b83c7afa7f6.png' %}" alt="Sketch URL Shorten" class="contact-img w-100 scaleX-n1-rtl" />
                                 <div class="pt-3 px-4 pb-1">
                                 </div>
                             </div>
@@ -191,27 +190,27 @@
                         <div class="col-lg-7">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="mb-1">Send a message</h4>
+                                    <h4 class="mb-1">Shorten a URL</h4>
                                     <p class="mb-4">
-                                        If you would like to discuss anything related to payment, account, licensing,<br class="d-none d-lg-block" />
-                                        partnerships, or have pre-sales questions, you’re at the right place.
+                                         Shorten your long URLs for easy sharing and tracking.
+                                        <!-- <br class="d-none d-lg-block" /> -->
                                     </p>
                                     <form>
                                         <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <label class="form-label" for="contact-form-fullname">Full Name</label>
-                                                <input type="text" class="form-control" id="contact-form-fullname" placeholder="john" />
+                                            <div class="col-12">
+                                                <label class="form-label" for="url-shorten-form-url">Paste a long URL</label>
+                                                <input type="text" id="url-shorten-form-url" class="form-control" placeholder="https://www.example.com" />
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="form-label" for="contact-form-email">Email</label>
-                                                <input type="text" id="contact-form-email" class="form-control" placeholder="johndoe@gmail.com" />
+                                                <label class="form-label" for="url-shorten-form-domain">Custom Domain</label>
+                                                <input type="text" class="form-control" id="url-shorten-form-domain" placeholder="yourdomain" readonly/>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="url-shorten-form-back-half">Enter a custom path</label>
+                                                <input type="text" id="url-shorten-form-back-half" class="form-control" placeholder="custom-path" />
                                             </div>
                                             <div class="col-12">
-                                                <label class="form-label" for="contact-form-message">Message</label>
-                                                <textarea id="contact-form-message" class="form-control" rows="3" placeholder="Write a message"></textarea>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Send inquiry</button>
+                                                <button type="submit" class="btn btn-primary">Shorten URL</button>
                                             </div>
                                         </div>
                                     </form>
