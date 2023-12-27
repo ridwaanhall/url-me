@@ -7,7 +7,7 @@ def generate_random_path():
     letters = string.ascii_letters
     random_letters = random.choice(letters)
     letters_and_digits = string.ascii_letters + string.digits
-    return random_letters + ''.join(random.choice(letters_and_digits) for _ in range(4))
+    return random_letters + ''.join(random.choice(letters_and_digits) for _ in range(5))
 
 class ShortenedURL(models.Model):
     long_url = models.URLField()
