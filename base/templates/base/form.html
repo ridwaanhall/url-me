@@ -72,7 +72,7 @@
                             <i class="ti ti-menu-2 ti-sm align-middle"></i>
                         </button>
                         <!-- Mobile menu toggle: End-->
-                        <a href="landing-page.html" class="app-brand-link">
+                        <a href="#" class="app-brand-link">
                             <span class="app-brand-logo demo">
                                 <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -86,7 +86,7 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="#7367F0" />
                                 </svg>
                             </span>
-                            <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Vuexy</span>
+                            <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Erbyl</span>
                         </a>
                     </div>
                     <!-- Menu logo wrapper: End -->
@@ -105,19 +105,10 @@
                         </button>
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link fw-medium" aria-current="page" href="#landingHero">Home</a>
+                                <a class="nav-link fw-medium" aria-current="page" href="#homePage">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fw-medium" href="#landingFeatures">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-medium" href="#landingTeam">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-medium" href="#landingFAQ">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-medium" href="#landingContact">Contact us</a>
+                                <a class="nav-link fw-medium" href="#urlShortener">Contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -159,9 +150,30 @@
         <!-- Sections:Start -->
 
         <div data-bs-spy="scroll" class="scrollspy-example">
+            <!-- Hero: Start -->
+            <section id="hero-animation">
+                <div id="homePage" class="section-py landing-hero position-relative">
+                    <div class="container">
+                        <div class="hero-text-box text-center">
+                            <h1 class="text-primary hero-title display-6 fw-bold">One dashboard to manage all your businesses</h1>
+                            <h2 class="hero-sub-title h6 mb-4 pb-1">
+                                Production-ready & easy to use Admin Template<br class="d-none d-lg-block" />
+                                for Reliability and Customizability.
+                            </h2>
+                            <div class="landing-hero-btn d-inline-block position-relative">
+                                <span class="hero-btn-item position-absolute d-none d-md-flex text-heading">
+                                    Join community <img src="{% static 'img/front-pages/icons/Join-community-arrow.png' %}" alt="Join community arrow" class="scaleX-n1-rtl" />
+                                </span>
+                                <a href="#landingPricing" class="btn btn-label-primary btn-lg">Get early access</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero: End -->
 
             <!-- Contact Us: Start -->
-            <section id="landingContact" class="section-py bg-body landing-contact">
+            <section id="urlShortener" class="section-py landing-contact">
                 <div class="container">
                     <div class="text-center mb-3 pb-1">
                         <span class="badge bg-label-primary">Contact US</span>
@@ -173,30 +185,6 @@
                             <div class="contact-img-box position-relative border p-2 h-100">
                                 <img src="{% static 'img/front-pages/landing-page/contact-customer-service.png' %}" alt="contact customer service" class="contact-img w-100 scaleX-n1-rtl" />
                                 <div class="pt-3 px-4 pb-1">
-                                    <div class="row gy-3 gx-md-4">
-                                        <div class="col-md-6 col-lg-12 col-xl-6">
-                                            <div class="d-flex align-items-center">
-                                                <div class="badge bg-label-primary rounded p-2 me-2"><i class="ti ti-mail ti-sm"></i></div>
-                                                <div>
-                                                    <p class="mb-0">Email</p>
-                                                    <h5 class="mb-0">
-                                                        <a href="mailto:example@gmail.com" class="text-heading">example@gmail.com</a>
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-12 col-xl-6">
-                                            <div class="d-flex align-items-center">
-                                                <div class="badge bg-label-success rounded p-2 me-2">
-                                                    <i class="ti ti-phone-call ti-sm"></i>
-                                                </div>
-                                                <div>
-                                                    <p class="mb-0">Phone</p>
-                                                    <h5 class="mb-0"><a href="tel:+1234-568-963" class="text-heading">+1234 568 963</a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +208,7 @@
                                             </div>
                                             <div class="col-12">
                                                 <label class="form-label" for="contact-form-message">Message</label>
-                                                <textarea id="contact-form-message" class="form-control" rows="8" placeholder="Write a message"></textarea>
+                                                <textarea id="contact-form-message" class="form-control" rows="3" placeholder="Write a message"></textarea>
                                             </div>
                                             <div class="col-12">
                                                 <button type="submit" class="btn btn-primary">Send inquiry</button>
