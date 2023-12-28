@@ -4,4 +4,5 @@ from . import views
 
 urlpatterns = [
     path('', views.hello_world, name='hello_world'),
+    path('<str:custom_path>/', views.redirect_custom_path, name='redirect_custom_path'),
 ]
