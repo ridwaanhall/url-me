@@ -195,25 +195,28 @@
                                          Shorten your long URLs for easy sharing and tracking.
                                         <!-- <br class="d-none d-lg-block" /> -->
                                     </p>
-                                    <form>
+                                    <form method="post" action="{% url 'form_page' %}">
+                                        {% csrf_token %}
                                         <div class="row g-3">
                                             <div class="col-12">
-                                                <label class="form-label" for="url-shorten-form-url">Paste a long URL</label>
-                                                <input type="text" id="url-shorten-form-url" class="form-control" placeholder="https://www.example.com/shorten-this-url" required/>
+                                                <label class="form-label" for="long_url">Paste a long URL</label>
+                                                <input type="text" id="long_url" name="long_url" class="form-control" placeholder="https://www.example.com/shorten-this-url" required/>
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="form-label" for="url-shorten-form-domain">Custom Domain</label>
-                                                <input type="text" class="form-control" id="url-shorten-form-domain" placeholder="yourdomain" readonly/>
+                                                <label class="form-label" for="custom_domain">Custom Domain</label>
+                                                <input type="text" id="custom_domain" name="custom_domain" class="form-control" placeholder="yourdomain" readonly/>
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="form-label" for="url-shorten-form-back-half">Enter a custom path</label>
-                                                <input type="text" id="url-shorten-form-back-half" class="form-control" placeholder="custom-path" />
+                                                <label class="form-label" for="custom_path">Enter a custom path</label>
+                                                <input type="text" id="custom_path" name="custom_path" class="form-control" placeholder="custom-path" />
                                             </div>
                                             <div class="col-12">
                                                 <button type="submit" class="btn btn-primary">Shorten URL</button>
                                             </div>
                                         </div>
                                     </form>
+
+
                                 </div>
                             </div>
                         </div>
