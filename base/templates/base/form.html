@@ -46,6 +46,22 @@
                                 Shorten your long URLs for easy sharing and tracking.
                                 <!-- <br class="d-none d-lg-block" /> -->
                             </p>
+                            {% if messages %}
+                                {% for message in messages %}
+                                    {% if message.tags == 'error' %}
+                                        <div class="alert alert-danger alert-dismissible" role="alert">
+                                            {{ message }}
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                    {% elif message.tags == 'success' %}
+                                        <div class="alert alert-success alert-dismissible" role="alert">
+                                            {{ message|urlize }}
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                            
                             <form method="post" action="{% url 'form_page' %}">
                                 {% csrf_token %}
                                 <div class="row g-3">
