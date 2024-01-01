@@ -25,7 +25,9 @@ def form_page(request):
             shortened_url.save()
 
             full_shortened_url = f'{shortened_url.custom_domain}/{shortened_url.custom_path}'
-            messages.success(request, f'Shortened URL created successfully! {full_shortened_url}')
+            messages.success(
+                request,
+                f'Shortened URL created successfully! {full_shortened_url}')
             return redirect('form_page')
 
     else:
@@ -34,6 +36,7 @@ def form_page(request):
     context = {
         'form': form,
     }
+    
     return render(request, 'base/form.html', context)
 
 
