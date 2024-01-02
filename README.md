@@ -1,8 +1,8 @@
 # URL Shortener by Ridwaanhall
+my first url shortener with django.
 
 
-
-## 1
+## 1 if you need use. please [contact me](https://my-portfolio.ridwaanhall.repl.co/contact/)
 
 
 
